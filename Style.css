@@ -7,54 +7,40 @@
 
 .header {
   position: fixed;
-  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
-  width: 100%;
   z-index: 1000;
+  width: 100vw;
 }
-.header_content {
-  top: 0%;
+
+.headerContent {
+  background-color: #d8d9da;
+  height: 90px;
+  padding: 0px 80px 0px 60px;
   display: flex;
-  background-color: white;
-  height: 80px;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.header_logo_content {
-  margin: 14px 2px 0px 80px;
+.headLogoContent {
   display: flex;
-  justify-content: space-evenly;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
-.header_logo_content span {
-  font-size: 18px;
-  font-weight: 600;
-  margin-top: 14px;
-  letter-spacing: 2px;
-  margin-left: 10px;
+.headerMenuContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
 }
 
-.header_logo_content img {
+.img1 {
   height: 50px;
   width: 50px;
-  margin-right: 12px;
-  border-radius: 50px;
+  border-radius: 50%;
 }
 
-.header_link_content {
-  display: flex;
-  list-style-type: none;
-  margin-left: 250px;
-  margin-top: 26px;
-}
-
-.header_menu_content {
-  margin-left: 60px;
-}
-
-.header_menu_content li {
-  margin-left: 50px;
-}
-
-.header_link_content a {
+.headName a {
   text-decoration: none;
   color: black;
   font-size: 16px;
@@ -64,6 +50,12 @@
 
 .a:hover {
   color: #6528f7;
+}
+
+.a {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 #home {
@@ -122,6 +114,12 @@
   height: 30px;
   width: 30px;
   margin: 12px 0px;
+  border-radius: 2px;
+  padding: 2px;
+}
+
+.img:hover {
+  background-color: #c4dfdf;
 }
 
 .main_header_button a {
@@ -141,10 +139,18 @@
   font-size: 26px;
   border-radius: 5px;
   transition: background-color 0.5s;
+  transform: perspective(1500px) rotateY(15deg);
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  transition: transform 1s ease 0s;
+
+  &:hover {
+    transform: perspective(3000px) rotateY(15deg);
+  }
 }
 
-.btn:hover{
-  background-color: #0D1282;
+.btn:hover {
+  background-color: #0d1282;
 }
 
 #about {
@@ -223,10 +229,18 @@
   font-size: 17px;
   border-radius: 5px;
   transition: background-color 0.5s;
+  transform: perspective(1500px) rotateY(15deg);
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  transition: transform 1s ease 0s;
+
+  &:hover {
+    transform: perspective(3000px) rotateY(15deg);
+  }
 }
 
-.btn2:hover{
-  background-color: #0D1282;
+.btn2:hover {
+  background-color: #0d1282;
 }
 
 .skill {
@@ -271,6 +285,7 @@
 
 .project {
   padding: 100px 0px;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -419,6 +434,15 @@
   background-color: white;
   width: 60vw;
   border-radius: 10px;
+
+  transform: perspective(1500px) rotateY(10deg);
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  transition: transform 1s ease 0s;
+
+  &:hover {
+    transform: perspective(3000px) rotateY(5deg);
+  }
 }
 
 .forms {

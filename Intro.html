@@ -10,28 +10,18 @@
   </head>
   <body>
     <header class="header">
-      <div class="header_content">
-        <div class="header_logo_content">
-          <div class="header_image">
-            <img src="images/android-chrome-192x192.png" alt="" />
+      <div class="headerContent">
+        <div class="headLogoContent">
+          <div class="headImage">
+            <img class="img1" src="images/android-chrome-192x192.png" alt="" />
           </div>
           <span class="a">LOKESH PATIDAR</span>
         </div>
-        <div class="header_menu_content">
-          <ul class="header_link_content">
-            <li>
-              <a class="a" href="#home">HOME</a>
-            </li>
-            <li>
-              <a class="a" href="#about">ABOUT</a>
-            </li>
-            <li>
-              <a class="a" href="#project">PROJECT</a>
-            </li>
-            <li>
-              <a class="a" href="#contact">CONTACT</a>
-            </li>
-          </ul>
+        <div class="headerMenuContent">
+          <div class="headName"><a class="a" href="#home">HOME</a></div>
+          <div class="headName"><a class="a" href="#about">ABOUT</a></div>
+          <div class="headName"><a class="a" href="#project">PROJECT</a></div>
+          <div class="headName"><a class="a" href="#contact">CONTACT</a></div>
         </div>
       </div>
     </header>
@@ -51,7 +41,7 @@
       </div>
       <div class="main_header_social">
         <div class="site">
-          <a href="https://www.linkedin.com/in/lokesh-patidar-354863196/">
+          <a title="linkedin" href="https://www.linkedin.com/in/lokesh-patidar-354863196/">
             <img
               src="https://d33wubrfki0l68.cloudfront.net/d8e6e1e636531e28274a1b8b6d947b817f6145bd/d42d3/assets/svg/linkedin-dark.svg"
               alt=""
@@ -60,7 +50,7 @@
           </a>
         </div>
         <div class="site">
-          <a href="">
+          <a title="GitHub" href="https://github.com/loki05102000">
             <img
               src="https://d33wubrfki0l68.cloudfront.net/38469cf88d038b6ba3322c9fcb93a8f7167df4b9/cb0b9/assets/svg/github-dark.svg"
               alt=""
@@ -69,7 +59,7 @@
           </a>
         </div>
         <div class="site">
-          <a href="">
+          <a title="leetcode" href="https://leetcode.com/loki_2000/">
             <img
               src="https://d33wubrfki0l68.cloudfront.net/e978c8491d93813aa00b3dc80b9abfb0d64a9086/3c187/assets/svg/book-dark.svg"
               alt=""
@@ -78,7 +68,7 @@
           </a>
         </div>
         <div class="site">
-          <a href="">
+          <a title="twitter" href="https://twitter.com/loki_patel?t=tttvGOCCe8ISRWxuGXyvhg&s=09">
             <img
               src="https://d33wubrfki0l68.cloudfront.net/ba3ef9fd9d500c55ba265adae6087ba71e05f5d9/d0067/assets/svg/twitter-dark.svg"
               alt=""
@@ -172,7 +162,11 @@
                 >Portfolio is a successful Open-Source project that I created
                 which have been featured on github.</span
               >
-              <div class="pBtn"><a class="btn2" href="">Case Study</a></div>
+              <div class="pBtn">
+                <a class="btn2" href="Portfolio.html" target="_parent"
+                  >Case Study</a
+                >
+              </div>
             </div>
           </div>
           <div class="pro">
@@ -229,7 +223,7 @@
                 placeholder="Enter your message"
               ></textarea>
             </div>
-            <div id="fBtn"><button class="btn2 fBtn">Submit</button></div>
+            <div id="fBtn"><button type="submit" class="btn2 fBtn">Submit</button></div>
           </form>
         </div>
       </div>
@@ -248,16 +242,16 @@
           <div id="social">
             <span class="fHead">Social</span>
             <div class="socialSite">
-              <a href="https://www.linkedin.com/in/lokesh-patidar-354863196/">
+              <a title="linkedin" href="https://www.linkedin.com/in/lokesh-patidar-354863196/">
                 <img src="images/linkedin-ico.png" alt="" class="img" />
               </a>
-              <a href="">
+              <a title="github" href="https://github.com/loki05102000">
                 <img src="images/github-ico.png" alt="" class="img" />
               </a>
-              <a href="">
+              <a title="twitter" href="https://twitter.com/loki_patel?t=tttvGOCCe8ISRWxuGXyvhg&s=09">
                 <img src="images/twitter-ico.png" alt="" class="img" />
               </a>
-              <a href="">
+              <a title="leetcode" href="https://leetcode.com/loki_2000/">
                 <img src="images/blog-ico.png" alt="" class="img" />
               </a>
             </div>
@@ -269,7 +263,7 @@
             document.write(new Date().getFullYear());
           </script>
           . Made by&nbsp;
-          <a class="fAnchor" rel="noreferrer" target="_blank" href=""
+          <a class="fAnchor" rel="noreferrer" target="_blank" href="Intro.html"
             >Lokesh Patidar</a
           >
         </div>

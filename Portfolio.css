@@ -12,7 +12,7 @@
 }
 
 .headerContent {
-  background-color: #d8d9da;
+  background-color: #f0eeed;
   height: 90px;
   padding: 0px 80px 0px 60px;
   display: flex;
@@ -222,12 +222,12 @@
 }
 
 .footer {
-  padding: 80px 30px;
+  padding: 40px 30px 30px 30px;
   background-color: black;
   color: white;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
 }
 
 .footerUp {
@@ -278,6 +278,10 @@
   height: 30px;
   width: 30px;
   margin: 12px 0px;
+}
+
+.imgF:hover {
+  background-color: #c4dfdf;
 }
 
 @media (max-width: 600px) {

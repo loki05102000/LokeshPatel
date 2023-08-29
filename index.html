@@ -17,17 +17,22 @@
   <body>
     <header class="header">
       <div class="headerContent">
-        <div class="headLogoContent">
-          <div class="headImage">
-            <img class="img1" src="images/picofme.png" alt="" />
+        <nav class="navBar">
+          <div class="headerName">
+            <img class="mainImg" src="images/picofme.png" alt="" />
+            <span class="a">LOKESH PATIDAR</span>
           </div>
-          <span class="a">LOKESH PATIDAR</span>
-        </div>
-        <div class="headerMenuContent">
-          <div class="headName"><a class="a" href="#home">HOME</a></div>
-          <div class="headName"><a class="a" href="#about">ABOUT</a></div>
-          <div class="headName"><a class="a" href="#project">PROJECT</a></div>
-          <div class="headName"><a class="a" href="#contact">CONTACT</a></div>
+          <ul class="navBarList">
+            <li class="navList"><a class="a" href="#home">HOME</a></li>
+            <li class="navList"><a class="a" href="#about">ABOUT</a></li>
+            <li class="navList"><a class="a" href="#project">PROJECT</a></li>
+            <li class="navList"><a class="a" href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
         </div>
       </div>
     </header>
@@ -164,9 +169,7 @@
         </div>
         <div class="projects">
           <div class="pro">
-            <div class="pImg">
-              <img src="images/portfolio.jpeg" alt="" />
-            </div>
+            <img class="pImg" src="images/portfolio.jpeg" alt="" />
 
             <div class="proIn">
               <h1 class="all_head">Portfolio</h1>
@@ -182,9 +185,7 @@
             </div>
           </div>
           <div class="pro">
-            <div class="pImg">
-              <img src="images/crown-template.jpeg" alt="" />
-            </div>
+            <img class="pImg" src="images/crown-template.jpeg" alt="" />
 
             <div class="proIn">
               <h1 class="all_head">Crown Template</h1>
@@ -289,5 +290,12 @@
         </div>
       </div>
     </footer>
+    <script>
+      hamburger = document.querySelector(".hamburger");
+      hamburger.onclick = function () {
+        navBar = document.querySelector(".navBarList");
+        navBar.classList.toggle("active");
+      };
+    </script>
   </body>
 </html>

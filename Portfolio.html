@@ -14,25 +14,22 @@
   <body>
     <header class="header">
       <div class="headerContent">
-        <div class="headLogoContent">
-          <div class="headImage">
+        <nav class="navBar">
+          <div class="headerName">
             <img class="img" src="images/picofme.png" alt="" />
+            <span class="a">LOKESH PATIDAR</span>
           </div>
-          <span class="a">LOKESH PATIDAR</span>
-        </div>
-        <div class="headerMenuContent">
-          <div class="headName">
-            <a class="a" href="index.html#home">HOME</a>
-          </div>
-          <div class="headName">
-            <a class="a" href="index.html#about">ABOUT</a>
-          </div>
-          <div class="headName">
-            <a class="a" href="index.html#project">PROJECT</a>
-          </div>
-          <div class="headName">
-            <a class="a" href="index.html#contact">CONTACT</a>
-          </div>
+          <ul class="navBarList">
+            <li class="navList"><a class="a" href="#home">HOME</a></li>
+            <li class="navList"><a class="a" href="#about">ABOUT</a></li>
+            <li class="navList"><a class="a" href="#project">PROJECT</a></li>
+            <li class="navList"><a class="a" href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
         </div>
       </div>
     </header>
@@ -146,5 +143,12 @@
         </div>
       </div>
     </footer>
+    <script>
+      hamburger = document.querySelector(".hamburger");
+      hamburger.onclick = function () {
+        navBar = document.querySelector(".navBarList");
+        navBar.classList.toggle("active");
+      };
+    </script>
   </body>
 </html>

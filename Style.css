@@ -14,38 +14,33 @@
 .headerContent {
   background-color: #f0eeed;
   height: 90px;
-  padding: 0px 80px 0px 60px;
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  padding: 20px 80px 0px 60px;
 }
 
-.headLogoContent {
+.navBar {
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 14vw;
+}
+
+.navBar ul {
+  display: flex;
+  gap: 10vw;
+  list-style-type: none;
+}
+
+.headerName {
+  display: flex;
+  gap: 2vw;
   justify-content: center;
   align-items: center;
 }
 
-.headerMenuContent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-}
-
-.img1 {
+.mainImg {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-}
-
-.headName a {
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 2px;
 }
 
 .a:hover {
@@ -56,11 +51,58 @@
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 2px;
+  text-decoration: none;
+  color: black;
 }
 
-#home {
-  height: 100vh;
+@media (max-width: 900px) {
+  .headerContent {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    padding-top: 10px;
+  }
+
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background-color: #111;
+    margin: 4px 0px;
+    border-radius: 2px;
+  }
+
+  .navBarList {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 0px;
+    background-color: #f0eeed;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  .navBar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 0vh;
+    justify-content: space-evenly;
+    padding-right: 35px;
+    transition: 0.5s;
+  }
+
+  .navBarList.active {
+    height: 200px;
+  }
 }
+
 .main_header {
   background: linear-gradient(
       to right,
@@ -71,6 +113,7 @@
   min-height: 55rem;
   position: relative;
   height: 100vh;
+  width: 100vw;
 }
 .main_header_name {
   position: absolute;
@@ -311,6 +354,10 @@
   .proIn h1 {
     width: 80vw;
     text-align: center;
+  }
+  .pImg {
+    height: 160px;
+    
   }
 }
 

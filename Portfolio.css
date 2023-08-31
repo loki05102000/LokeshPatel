@@ -104,9 +104,6 @@
   .navBarList.active {
     height: 200px;
   }
-  
-
-  
 }
 
 #ProIntro {
@@ -141,6 +138,19 @@
   font-size: 20px;
   letter-spacing: 1px;
   line-height: 30px;
+}
+
+@media (max-width: 600px) {
+  .span {
+    width: 80vw;
+  }
+  .md {
+    width: 80vw;
+  }
+  .proImg img {
+    width: 80vw;
+    height: 20vh;
+  }
 }
 
 .btn {
@@ -286,6 +296,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   flex: 1 1 0;
+  align-items: center;
 }
 
 #intro {
@@ -342,14 +353,38 @@
     align-items: center;
     gap: 80px;
   }
-
+  #intro {
+    width: 98vw;
+  }
   #intro span {
-    text-align: center;
+    text-align: justify;
     padding-top: 10px;
+    width: 80vw;
   }
   .para,
-  .name,
+  .name {
+    text-align: justify;
+  }
+
+  #social {
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;
+    align-items: center;
+  }
   .allHead {
     text-align: center;
   }
+  .allSpan {
+    width: 80vw;
+  }
+
+  .skill,
+  .md {
+    width: 80vw;
+  }
+}
+
+#footer {
+  overflow: hidden;
 }
